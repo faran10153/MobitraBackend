@@ -12,7 +12,7 @@ mongoose.connect(
   () => {
     console.log("Database Sccessfully Connected");
   },
-  6000
+  4000
 );
 
 app.use(express.json());
