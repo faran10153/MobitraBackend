@@ -8,7 +8,7 @@ const cors = require("cors");
 mongoose.set("strictQuery", true);
 
 mongoose.connect(
-  "mongodb+srv://faribabar1998:faribabar1998@cluster0.aep3bhb.mongodb.net/?retryWrites=true&w=majority",
+  process.env.Database_LINK,
   () => {
     console.log("Database Sccessfully Connected");
   },
